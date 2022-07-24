@@ -1,27 +1,13 @@
 # ベイズ推定によってデータ分析し、カタカナをカッコいいか、カワイイか判別
 
 ## データについて
-　以下２つのサイトからデータ取得してきた。カッコイイ、カワイイという形容詞には主観を含むため、
+　カッコイイ、カワイイという形容詞には主観を含むため、
 完璧なデータではない可能性がある。
-以下のサイトから比較的カッコイイ、カワイイと思った単語をそれぞれ利用した。
+参考文献に記載したサイトから比較的カッコイイ、カワイイと思った単語をそれぞれ利用した。
 
-https://kakkoii-yougosyuu.com/archives/katakanataizen.html
-
-https://www.lafary.net/culture/7412/
-
-https://www.lafary.net/culture/22853/
-
-https://english.chicken168.com/kawaii4/
-
-https://english.chicken168.com/kawaii5/
-
-https://english.chicken168.com/kawaii6/
-
-https://english.chicken168.com/kawaii7/
-
-　また、精度を確認する際のデータの解答がずれている場合には精度が極端に落ちてしまうと考えられるため調整を行った。
+　また、テストデータの解答がずれている場合には精度が極端に落ちてしまうと考えられるため、自分の主観により調整を行った。
 また、カワイイ単語とカッコイイ単語のデータのどちらかが多く、どちらかが少ない状態だと
-文字が出現する回数に偏りが生じてしまい精度が落ちてしまうため、学習でーたとテストデータの両方で同量のデータ量
+文字が出現する回数に偏りが生じてしまい精度が落ちてしまうため、学習データとテストデータの両方で同量のデータ量
 を利用した。そして、学習データの合計は580、テストデータは24として実験を行った。
 
 ## 分析手法と分析結果について
@@ -67,3 +53,21 @@ https://english.chicken168.com/kawaii7/
 　表１と表２に示したように、カッコイイ印象を与える文字を含んだ単語はカッコよくなり、カワイイ印象を含んだ単語はカワイイと判断されると判断できる。
 このような文字の特徴利用して今回のように判断するプログラムを作成することで、他の印象を与える文字にも応用できると考えられる。
 　名前による印象は日常生活だけでは無く、企業の印象をコントロールすることで価値を高めることができる。精度を向上させることで需要のあるツールを提供できると言える。
+
+# 参考文献
+ 
+＜カワイイカタカナとカッコイイカタカナについて＞
+ 
+https://kakkoii-yougosyuu.com/archives/katakanataizen.html
+
+https://www.lafary.net/culture/7412/
+
+https://www.lafary.net/culture/22853/
+
+https://english.chicken168.com/kawaii4/
+
+https://english.chicken168.com/kawaii5/
+
+https://english.chicken168.com/kawaii6/
+
+https://english.chicken168.com/kawaii7/
